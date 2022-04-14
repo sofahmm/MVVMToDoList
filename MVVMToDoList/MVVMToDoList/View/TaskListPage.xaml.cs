@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using MVVMToDoList.ViewModels;
 
 namespace MVVMToDoList.View
 {
@@ -15,6 +16,7 @@ namespace MVVMToDoList.View
         public TaskListPage()
         {
             InitializeComponent();
+            BindingContext = new TasksListViewModel() { Navigation = this.Navigation };
         }
     }
 }

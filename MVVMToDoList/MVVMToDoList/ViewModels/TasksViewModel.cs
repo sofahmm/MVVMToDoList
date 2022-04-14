@@ -15,7 +15,7 @@ namespace MVVMToDoList.ViewModels
         {
             Task = new Task();
         }
-        public TasksListViewModel TasksListViewModel
+        public TasksListViewModel ListViewModel
         {
             get { return lvm; }
             set

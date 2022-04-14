@@ -10,7 +10,7 @@ namespace MVVMToDoList
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new View.TaskListPage());
         }
 
         protected override void OnStart()
